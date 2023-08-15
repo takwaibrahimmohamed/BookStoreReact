@@ -1,0 +1,140 @@
+.model-container{
+    position: fixed;
+   width: 100vw;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,.7);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 9999 ;
+   
+}
+.model-content{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+.modal-icon{
+  
+    position: absolute;
+    border-radius: 50%;
+    font-size: 40px;
+   
+    color: red;
+    cursor: pointer;
+    top: -12px;
+    right: 0;
+}
+.model-image{
+    width: 40%;
+    height: 100%;
+}
+.model-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.model-info{
+   width: 60%;
+   padding: 30px;
+}
+.model-title{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.model-status{
+font-weight: normal;
+
+}
+.model-status span,.spanAuther,.spanPrice{
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.modelAuther span:last-of-type{
+    color: green;
+    text-transform: capitalize;
+}
+.model-price{
+    margin: 8px 0;
+}
+.model-price span:last-of-type{
+
+    font-size: 20px;
+    color: rgb(210, 9, 9);
+
+}
+.model-add-inp{
+    
+}
+.model-add-inp input{
+margin-right: 20px;
+margin-bottom: 10px;
+padding:5px 15px;
+}
+.model-add-tocard{
+    padding: 10px;
+    text-transform: capitalize;
+    color: green;
+    border: none;
+    background-color: white;
+    border: 1px solid green;
+    border-radius:4px ;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+
+}
+.model-add-tocard:hover{
+    background-color: rgb(102, 193, 102);
+    color: white;
+}
+.seeMoreInfo .seeMoreInfoButton{
+    padding:10px 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 600;
+    background-color: rgb(14 105 178);
+    color: white;
+    cursor: pointer;
+    border: none;
+   display: block;
+    border-radius: 5px;
+}
+
+/* resposive */
+@media (max-width:800px){
+    .model-image{
+        width: 30%;
+    }
+    .model-info {
+        width: 70%;
+        padding: 77px 30px;
+
+    }
+    .model-title{
+        font-size: 21px;
+    }
+}
+@media (max-width:740px){
+    .model-image{
+      display: none;
+    }
+    .model-info {
+        width: 100%;
+        padding: 15px;
+
+    }
+    .model-title{
+        font-size: 21px;
+    }
+}

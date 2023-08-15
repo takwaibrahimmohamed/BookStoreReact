@@ -1,0 +1,43 @@
+.services{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+.service-item{
+    width: 21%;
+border: 1px solid gray;
+border-radius: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 7px;
+font-size: 21px;
+color: #2c3e50;
+text-transform: capitalize;
+}
+.service-item i{
+    font-size: 40px;
+}
+@media (max-width:920px){
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 15px;
+    }
+    .service-item{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:520px){
+    
+    .service-item{
+        width: 90%;
+        font-size: 25px;
+    }
+    .service-item i{
+        font-size: 50px;
+    }
+}
